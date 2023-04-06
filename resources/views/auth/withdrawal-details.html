@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,500&display=swap"
+        rel="stylesheet">
+    <script src="./script/tailwind.config.js"></script>
+    <link rel="stylesheet" href="./dist/output.css">
+    <link rel="stylesheet" href="./css/input.css">
+    <title>withdrawal-details | The Believers' Life House Media </title>
+</head>
+
+<body class="bg-gradient-to-r from-red-600 to-pink-600 min-h-screen pt-10 md:pt-20 pb-6 px-2 md:px-10">
+
+    <main class="bg-white rounded-3xl shadow-2xl p-5">
+
+
+        <!-- header  -->
+        <section class="flex items-center justify-between">
+            <img src="./images/logo.png" class="w-10 h-10" alt="Believers Life House Media logo" srcset="">
+
+            <!-- left menu -->
+            <nav class="hidden items-center space-x-10 text-sm  lg:flex">
+                <a href="dashboard.html" class="text-black font-bold hover:text-pink-600 transition duration-500"> Home
+                </a>
+                <a href="withdrawal-details.html"
+                    class="text-black font-bold hover:text-pink-600 transition duration-500"> Withdrawal Details </a>
+                <a href="withdrawal-details.html"
+                    class="text-black font-bold hover:text-pink-600 transition duration-500"> Account Setting</a>
+                <a href="withdrawal-details.html"
+                    class="text-black font-bold hover:text-pink-600 transition duration-500"> Profile</a>
+                <a href="index.html"><img src="./images/logout.png" class="w-8 h-8"
+                        alt="Believers Life House Media logo" srcset=""></a>
+
+
+
+            </nav>
+
+            <!--Hamburger Button -->
+            <button id="menu-btn" class="block p-5 rounded hamburger lg:hidden focus:outline-none" type="button">
+
+                <span class="hamburger-top"></span>
+                <span class="hamburger-middle"></span>
+                <span class="hamburger-bottom"></span>
+            </button>
+
+            <!-- Hamburger Menu -->
+            <div id="menu"
+                class="absolute hidden flex p-6  px-30 rounded-lg  bg-white text-black right-6 top-20 z-100 shadow-2xl lg:hidden">
+                <div class="flex flex-col items-center justify font-bold text-black rounded-sm">
+                    <a href="dashboard.html"
+                        class="text-black font-bold py-3 text-center w-full hover:text-pink-600 transition duration-500">
+                        Dashboard</a>
+                    <a href="withdrawal-details.html"
+                        class="text-black font-bold py-3 text-center w-full hover:text-pink-600 transition duration-500">
+                        Withdrawal Details</a>
+                    <a href="account-settings.html"
+                        class="text-black font-bold py-3 text-center w-full hover:text-pink-600 transition duration-500">
+                        Account Setting</a>
+                    <a href="profile.html"
+                        class="text-black font-bold py-3 text-center w-full hover:text-pink-600 transition duration-500">
+                        Profile</a>
+                    <a href="index.html"
+                        class="border-t-2 w-full text-center text-white bg-pink-600 px-4 py-1 rounded-full">Log Out</a>
+                </div>
+            </div>
+
+
+        </section>
+
+        <!-- Account Settings -->
+        <section class="font-bold text-sm lg:px-20">
+            <p>Account Settings</p>
+            <form action="" method="POST" class="flex flex-col space-x-2 lg:flex-row lg:flex-wrap">
+                <div class="mb-6 pt-3 basis-1/2">
+                    <label for="" class="block mb-2 ml-3 font-bold">Old Password</label>
+                    <input type="text" id="email"
+                        class="bg-gray-100 w-full  p-3 focus:outline-none border-b-4 border-gray focus:border-pink-600 transition duration-500">
+                </div>
+
+                <div class="mb-6 pt-3 w-1/2">
+                    <label for="" class="block mb-2 ml-3 font-bold">New Password</label>
+                    <input type="text" id="email"
+                        class="bg-gray-100 w-full  p-3 focus:outline-none border-b-4 border-gray focus:border-pink-600 transition duration-500">
+                </div>
+
+                <div class="mb-6 pt-3  basis-1/2">
+                    <label for="" class="block mb-2 ml-3 font-bold">Confirm New Password</label>
+                    <input type="text" id="email"
+                        class="bg-gray-100 w-full  p-3 focus:outline-none border-b-4 border-gray focus:border-pink-600 transition duration-500">
+                </div>
+
+                <div class="mb-6 pt-3">
+                    <label for="" class="block mb-2 ml-3 font-bold">Secret Password</label>
+                    <input type="text" id="email"
+                        class="bg-gray-100 w-full  p-3 focus:outline-none border-b-4 border-gray focus:border-pink-600 transition duration-500">
+                </div>
+
+                <button
+                    class="bg-gradient-to-l from-pink-600 to-red-600 text-white font-bold w-full rounded shadow-lg hover:shadow-xl transition duration-200"
+                    type="submit"> <a href="dashboard.html">Update</a>
+                </button>
+
+            </form>
+
+        </section>
+
+
+    </main>
+
+</body>
+
+</html>
+<script src="./js/script.js"></script>
